@@ -7,5 +7,4 @@ try {
 catch(Exception $e) {
 	die('Error connecting to the bdd : '.$e->getMessage());
 }
-
 ?>

@@ -22,7 +22,7 @@ $password = "123456";
 
 #	Put the name of the database you want to use here.
 
-$database = "db_rush01";
+$database = "dbname";
 
 #	Charset used in the database.
 
