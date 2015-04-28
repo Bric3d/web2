@@ -40,6 +40,20 @@ CREATE TABLE IF NOT EXISTS users (
   `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS `site_infos` (
+  `title` varchar(255) NOT NULL DEFAULT 'Your awesome site',
+  `admin_page` varchar(255) NOT NULL DEFAULT 'admin.php',
+  `description` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `site_infos`
+--
+
+INSERT INTO `site_infos` (`title`, `admin_page`, `description`) VALUES
+('Your awesome site', 'admin.php', 'Here goes your sites description.');
+
+
 
 ALTER TABLE articles
   ADD PRIMARY KEY (id);
